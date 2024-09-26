@@ -31,13 +31,16 @@ class _EstadosViewState extends State<EstadosView> {
                   return Card(
                     child: InkWell(
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Text(
-                            lista[index].sigla,
-                            style: TextStyle(fontSize: 44),
+                          Image.asset(
+                            'lib/imagens/${lista[index].sigla}.png',
+                            width: 120,
                           ),
-                          Text(lista[index].nome),
+                          Text(
+                            '${lista[index].nome} (${lista[index].sigla})',
+                            style: TextStyle(fontSize: 18),
+                          ),
                         ],
                       ),
                       onTap: () {

@@ -1,3 +1,4 @@
-# app_exemplo_api
+# API com Flutter
 
-A new Flutter project.
+Objetivo
+Demonstrar o consumo de API com o framework Flutter.
